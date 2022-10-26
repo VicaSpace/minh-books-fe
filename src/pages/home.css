@@ -1,0 +1,22 @@
+.home-book-list-container {
+  margin-top: 12px;
+  padding-left: 24px;
+}
+
+.ads-carousel-container {
+  margin-top: 12px;
+  padding: 24px;
+  height: 160px;
+}
+
+.popular-authors-container {
+  margin-top: 100px;
+  padding-left: 24px;
+}
+
+.popular-author-heading {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 24px;
+}

@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import { ChakraProvider, Container } from '@chakra-ui/react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import FooterNavbar from './components/FooterNavbar';
+import HomePage from './pages/home';
+import MyBooksPage from './pages/mybooks';
+import NotFoundPage from './pages/notfound';
+import SearchPage from './pages/search';
+import theme from './theme';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider theme={theme}>
+      <BrowserRouter>
+        <Container className="app-container">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/search" element={<SearchPage />} />
+            <Route path="/my-books" element={<MyBooksPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+          <FooterNavbar />
+        </Container>
+      </BrowserRouter>
+    </ChakraProvider>
   );
-}
+};
 
 export default App;

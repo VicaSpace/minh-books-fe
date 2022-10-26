@@ -1,0 +1,59 @@
+.mybooks-title-container {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mybooks-tabs-container {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mybooks-tabs-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 241px;
+  border-radius: 117px;
+  background-color: #fbfaf5;
+}
+.mybooks-tabs-active {
+  font-family: 'Open Sans' !important;
+  font-style: normal !important;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  border-radius: 20px;
+
+  width: 104px;
+  height: 34px;
+
+  color: #ffffff;
+}
+
+.mybooks-tabs-inactive {
+  font-family: 'Open Sans' !important;
+  font-style: italic !important;
+  font-weight: 300 !important;
+  font-size: 13px;
+  line-height: 18px;
+
+  width: 104px;
+  height: 34px;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

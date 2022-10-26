@@ -1,0 +1,10 @@
+.book-card-list-container {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+
+.book-card-list-item {
+  display: inline-flex;
+  margin-right: 24px;
+}

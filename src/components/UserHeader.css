@@ -1,0 +1,27 @@
+.user-header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.user-header-heading {
+  font-size: 28px;
+  font-style: normal;
+  line-height: 34px;
+}
+
+.user-header-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 20px;
+}
+
+.user-header-item-left {
+}
+
+.user-header-item-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 8px;
+}

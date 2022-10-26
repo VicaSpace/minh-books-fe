@@ -1,0 +1,30 @@
+.nav-container {
+  /* Flex props */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* center items vertically, in this case */
+  flex-wrap: wrap;
+
+  /* Position props */
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 84px;
+
+  padding-right: 64px;
+  padding-left: 64px;
+
+  /* Color */
+  background-color: #ffffff;
+}
+
+.nav-item {
+  margin: 10px auto;
+}
+
+.nav-item:hover {
+  color: gray;
+  cursor: pointer;
+}
